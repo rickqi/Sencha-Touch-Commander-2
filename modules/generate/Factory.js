@@ -27,6 +27,9 @@ Ext.generator.Factory = Ext.extend(Object, {
         '',
         'Generating a controller:',
         '    ./generate controller users create update destroy',
+        '',
+        'Generating a store:',
+        '    ./generate store users',
         ''
     ],
     
