@@ -9,7 +9,11 @@ Ext.CommandDispatcher = {
     types: {},
     
     dispatch: function(module, args) {
-        new this.types[module]({args: args});
+        try {
+            new this.types[module]({args: args});
+        } catch (e) {
+            Logger.log("Dispatching of command failed please check your input");
+        }
     }
 };
 

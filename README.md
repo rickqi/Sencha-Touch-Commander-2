@@ -40,6 +40,7 @@ the appropriate index.html file.
 
 ## Builder
 
+This doesn't exist yet, but will look like the following;
 The builder builds your application into a deployment-ready folder by combining all JavaScript into a
 single file and minifying it. Building is simple:
 
