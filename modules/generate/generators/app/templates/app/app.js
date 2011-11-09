@@ -8,11 +8,5 @@ Ext.Loader.setConfig({
 });
 
 Ext.application({
-    name         : "{name}",
-    controllers  : [],
-
-    launch: function() {
-		Ext.require('{name}.view.Viewport');
-        Ext.create('{name}.view.Viewport');
-    }
+    name         : "{name}"
 });
