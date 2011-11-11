@@ -8,6 +8,26 @@ Ext.builder = {};
  */
 Ext.builder.Builder = Ext.extend(Object, {
 
+    name: "Builder",
+    version: "0.0.1",
+    
+    constructor: function(config) {
+        Ext.apply(this, config);
+        
+        Cli.call(this);
+    },
+    
+    initArguments: function() {},
+    
+    usage: [
+        'Example usage:',
+        'Arguments in square brackets are optional',
+        '',
+        'Building your app:',
+        '    ./sencha build',
+        ''
+    ],
+
     run: function() {
         var file = "deploy/index.html";
         
@@ -16,6 +36,7 @@ Ext.builder.Builder = Ext.extend(Object, {
         } else {
             this.generateIndex(file);
         }
+        Logger.log("This feature is not implemented yet....");
     },
     
     /**
