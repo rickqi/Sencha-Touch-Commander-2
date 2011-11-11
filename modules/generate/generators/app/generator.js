@@ -48,7 +48,7 @@ Ext.generator.Application = Ext.extend(Ext.generator.Base, {
         this.file('test/unit/SpecOptions.js');
         this.file('test/unit/.htaccess');
         
-        this.template('app/app.js',            this);
+        this.template('app/app.js', this);
         this.template('app/view/Viewport.js', this);
     },
     
